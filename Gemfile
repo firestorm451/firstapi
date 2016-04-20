@@ -31,7 +31,7 @@ gem 'pry-rails', :group => :development
 gem 'haml'
 gem "octokit", "~> 4.0"
 gem 'figaro'
-
+gem 'rails_12factor'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
