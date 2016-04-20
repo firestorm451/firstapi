@@ -1,0 +1,13 @@
+<h1>Stuff#index</h1>
+<div class="container">
+  <div class="row">
+    <% @users.each do |rub| %>
+    <ul>
+      <li><%= link_to(rub.name.downcase, rub.html_url)%></li>
+      <li> Number of repos: <%= rub.public_repos %></li>
+      <li> Number of followers: <%= rub.followers %></li>
+    </ul>
+      <% end %>
+      <%= paginate @users %>
+  </div>
+</div>
