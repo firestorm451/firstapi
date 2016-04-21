@@ -5,4 +5,6 @@ class StuffController < ApplicationController
     @users = @ruby_peeps.map{|u| Octokit.user(u[:id])}
   end
 
+  def show
+  end
 end
