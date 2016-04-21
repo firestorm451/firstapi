@@ -1,3 +1,19 @@
 // Place all the styles related to the stuff controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.avatar {
+  max-height: 10em;
+  min-height: 10em;
+  img {
+    max-height: 10em;
+    min-height: 10em;
+  }
+}
+
+div ul li {
+  display: inline-block;
+  padding-left: 20px;
+}

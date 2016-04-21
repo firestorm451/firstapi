@@ -1,13 +1,18 @@
-<h1>Stuff#index</h1>
+<h1>Indianapolis Rubists</h1>
 <div class="container">
   <div class="row">
     <% @users.each do |rub| %>
-    <ul>
-      <li><%= link_to(rub.name.downcase, rub.html_url)%></li>
-      <li> Number of repos: <%= rub.public_repos %></li>
-      <li> Number of followers: <%= rub.followers %></li>
-    </ul>
-      <% end %>
-      <%= paginate @users %>
+    <div class="">
+      <img src="<%= rub.avatar_url %>" class="img-responsive avatar">
+    </div>
+    <div class="">
+      <ul class="list-group-bio">
+        <li><%= link_to(rub.name.downcase, rub.html_url)%></li>
+        <li>Joined Github:<%= rub.created_at.strftime("%b %d, %Y") %></li>
+        <li> Number of Repos: <%= rub.public_repos %></li>
+        <li> Number of Followers: <%= rub.followers %></li>
+      </ul>
+    </div>
+    <% end %>
   </div>
 </div>
